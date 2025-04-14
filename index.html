@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waroeng Jewa - Kuliner Jawa Autentik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Waroeng Jewa</span>
+            </div>
+            <p class="tagline">Rasa Jawa Asli Sejak 1980</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><a href="#makanan"><i class="fas fa-utensils"></i> Makanan</a></li>
+            <li><a href="#minuman"><i class="fas fa-coffee"></i> Minuman</a></li>
+            <li><a href="#paket"><i class="fas fa-box-open"></i> Paket</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> Tentang</a></li>
+            <li><a href="#kontak"><i class="fas fa-phone-alt"></i> Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Nikmati Keaslian Rasa Jawa</h1>
+            <p>Diolah dengan bumbu tradisional dan resep turun temurun</p>
+            <a href="#makanan" class="btn-explore">Lihat Menu <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+    
+    <div class="container">
+        <section id="makanan" class="menu-section">
+            <h2 class="section-title">Menu Makanan</h2>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="nasi">Nasi</button>
+                <button class="category-btn" data-category="mie">Mie & Soto</button>
+                <button class="category-btn" data-category="lauk">Lauk Pauk</button>
+                <button class="category-btn" data-category="snack">Snack</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Item makanan akan diisi oleh JavaScript -->
+            </div>
+        </section>
+        
+        <section id="minuman" class="menu-section">
+            <h2 class="section-title">Menu Minuman</h2>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="kopi">Kopi</button>
+                <button class="category-btn" data-category="teh">Teh</button>
+                <button class="category-btn" data-category="jus">Jus</button>
+                <button class="category-btn" data-category="tradisional">Tradisional</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Item minuman akan diisi oleh JavaScript -->
+            </div>
+        </section>
+        
+        <section id="paket" class="package-section">
+            <h2 class="section-title">Paket Spesial</h2>
+            
+            <div class="package-grid">
+                <div class="package-card">
+                    <div class="package-badge">Best Seller</div>
+                    <div class="package-img">
+                        <img src="https://3.bp.blogspot.com/-AyCfUI9H3Hw/WHt5WfVpAaI/AAAAAAAABYY/RCq24CDSGG4caa-qmG58klIisC4uC-wkQCLcB/s400/15977342_10209850866962928_7123589364529454167_n.jpg" alt="Paket Rames">
+                    </div>
+                    <div class="package-content">
+                        <h3>Paket Rames</h3>
+                        <div class="package-desc">
+                            <p><i class="fas fa-check"></i> Nasi putih</p>
+                            <p><i class="fas fa-check"></i> Ayam goreng</p>
+                            <p><i class="fas fa-check"></i> Tempe orek</p>
+                            <p><i class="fas fa-check"></i> Sayur lodeh</p>
+                            <p><i class="fas fa-check"></i> Sambal + Lalapan</p>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">Rp 35.000</span>
+                            <span class="original-price">Rp 42.000</span>
+                        </div>
+                        <button class="btn-order"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-badge">New</div>
+                    <div class="package-img">
+                        <img src="https://4.bp.blogspot.com/-Azh-gAVqCL8/Wa40s2aibzI/AAAAAAAAzlw/-6uIG22Pd10yTJf3LZuH1RoM_K7K9_ehgCLcBGAs/s1600/P8090069.jpg" alt="Paket Selera">
+                    </div>
+                    <div class="package-content">
+                        <h3>Paket Selera</h3>
+                        <div class="package-desc">
+                            <p><i class="fas fa-check"></i> Nasi gudeg</p>
+                            <p><i class="fas fa-check"></i> Ayam areh</p>
+                            <p><i class="fas fa-check"></i> Telur pindang</p>
+                            <p><i class="fas fa-check"></i> Krecek</p>
+                            <p><i class="fas fa-check"></i> Sambal krecek</p>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">Rp 40.000</span>
+                            <span class="original-price">Rp 48.000</span>
+                        </div>
+                        <button class="btn-order"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-badge">Promo</div>
+                    <div class="package-img">
+                        <img src="https://th.bing.com/th/id/OIP.B9RQ4qJI_EWvCKZn9kdLIwHaHa?w=198&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Paket Komplit">
+                    </div>
+                    <div class="package-content">
+                        <h3>Paket Komplit</h3>
+                        <div class="package-desc">
+                            <p><i class="fas fa-check"></i> Nasi campur</p>
+                            <p><i class="fas fa-check"></i> Ayam bakar</p>
+                            <p><i class="fas fa-check"></i> Tempe tahu bacem</p>
+                            <p><i class="fas fa-check"></i> Sayur asem</p>
+                            <p><i class="fas fa-check"></i> Sambal terasi</p>
+                            <p><i class="fas fa-check"></i> Es teh</p>
+                        </div>
+                        <div class="package-price">
+                            <span class="price">Rp 45.000</span>
+                            <span class="original-price">Rp 55.000</span>
+                        </div>
+                        <button class="btn-order"><i class="fas fa-shopping-cart"></i> Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tentang Waroeng Jewa">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Tentang Kami</h2>
+                <p>Waroeng Jewa didirikan pada tahun 1980 oleh Mbah Jewa dengan tujuan melestarikan cita rasa asli masakan Jawa. Dengan resep turun temurun dan bahan-bahan pilihan, kami menghadirkan keautentikan rasa yang sulit ditemui di tempat lain.</p>
+                <p>Setiap hidangan kami olah dengan teknik tradisional dan bumbu racikan sendiri. Kami tidak menggunakan bahan pengawet atau penyedap buatan untuk menjaga kualitas dan kesehatan pelanggan.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <span>Bahan Segar</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mortar-pestle"></i>
+                        <span>Racikan Tradisional</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <span>Dibuat dengan Cinta</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="kontak" class="contact-section">
+            <h2 class="section-title">Hubungi Kami</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Jl. Rasa Jawa No. 123, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>0813-3376-0030 (WhatsApp)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Jam Buka</h3>
+                            <p>Senin-Minggu: 08.00 - 22.00</p>
+                            <p>Jumat: 11.00 - 21.00</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Nomor Telepon">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.102389017141!2d110.3698083147792!3d-7.797873794393982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Waroeng Jewa</span>
+                </div>
+                <p>Melestarikan cita rasa Jawa sejak 1980</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#makanan">Menu Makanan</a></li>
+                    <li><a href="#minuman">Menu Minuman</a></li>
+                    <li><a href="#paket">Paket Spesial</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Dapatkan promo dan menu terbaru langsung ke email Anda</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Alamat Email" required>
+                    <button type="submit">Berlangganan <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Waroeng Jewa. Seluruh hak cipta dilindungi.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-amazon-pay"></i>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="floating-buttons">
+        <a href="https://wa.me/6281333760030" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
